@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{#each results}}{{product_name}}{{/each}}-{{Website_name}}</title>
+    </head>
+    <body>
+        {{>header}}
+        {{#each results}}
+        <h1>Product Name: {{product_name}}</h1>
+        <h2>Product Price: {{product_price}}</h2>
+        {{/each}}
+    </body>
+</html>
